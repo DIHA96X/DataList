@@ -38,14 +38,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.31" />
+            app:layout_constraintGuide_percent="0.25" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/gl11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.5" />
+            app:layout_constraintGuide_percent="0.6" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/gl2"
@@ -78,10 +78,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:height="44dp"
             android:text="Nombre del usuario:"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.885"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/gl2" />
 
@@ -100,10 +102,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:height="44sp"
             android:text="ID del usuario:"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.79"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/gl3" />
 
@@ -122,11 +126,12 @@
         <ImageView
             android:layout_width="72dp"
             android:layout_height="72dp"
+            android:layout_marginTop="4dp"
             android:src="@drawable/profile_photo_empty"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/gl11"
-            app:layout_constraintTop_toTopOf="@+id/gl4"
-            />
+            app:layout_constraintTop_toTopOf="@+id/gl4" />
 
         <com.idaxmx.myapplication.ui.widget.UserStature
             android:layout_width="wrap_content"
@@ -137,16 +142,16 @@
             app:layout_constraintTop_toTopOf="parent" />
 
 
-
         <Button
             android:id="@+id/returnButton"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
+            android:layout_marginStart="184dp"
             android:text="Regresar"
             app:layout_constraintBottom_toTopOf="@+id/gl2"
             app:layout_constraintStart_toStartOf="@+id/gl1"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.046" />
+            app:layout_constraintVertical_bias="0.163" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

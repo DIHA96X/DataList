@@ -8,7 +8,8 @@ import com.idaxmx.myapplication.databinding.ActivitySecondaryBinding
 import com.idaxmx.myapplication.model.User
 import com.idaxmx.myapplication.ui.main.MainActivity
 import com.idaxmx.myapplication.util.extension.MaxHeight
-import com.idaxmx.myapplication.util.extension.convertHeightToPercentageBase2m
+import com.idaxmx.myapplication.util.extension.convertHeightToPercentage
+
 
 class SecondaryActivity : AppCompatActivity() {
 
@@ -24,8 +25,8 @@ class SecondaryActivity : AppCompatActivity() {
         val user = bundle.getSerializable("user")as User
 
 
-        binding.height = user.height.convertHeightToPercentageBase2m()
-        binding.maxHeight = MaxHeight.THREE
+        binding.height = user.height.convertHeightToPercentage(MaxHeight.TWO)
+        binding.maxHeight = MaxHeight.TWO
 
 
         binding.returnButton.setOnClickListener() {

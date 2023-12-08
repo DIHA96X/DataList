@@ -18,9 +18,10 @@ class TestActivity : AppCompatActivity() {
         val user = User(
             id = "someId",
             name = "Xchel",
-            height = 0.53f
+            height = 1.53f
+
         )
-        val base = MaxHeight.TWO
+        val base = MaxHeight.FOUR
         binding.height = user.height.convertHeightToPercentage(base)
         binding.maxHeight = base
         setContentView(binding.root)

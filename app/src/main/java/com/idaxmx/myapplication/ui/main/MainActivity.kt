@@ -41,8 +41,8 @@ class MainActivity : AppCompatActivity() {
             User("123", "Darios", 1.76F),
             User("123", "Isaac", 1.50F),
             User("123", "Eduardo", 1.94F),
-            User("123", "Jose", 1.99F),
-            User("123", "Ian", 1.45F),
+            User("123", "Jose", 1.19F),
+            User("123", "Ian", 0.45F),
         )
     )
 
@@ -61,22 +61,22 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun handleUserSelected(user: User) {
-        //Toast.makeText(this, user.name, Toast.LENGTH_SHORT).show()
-
-        val id = user.id
-        val name = user.name
-        //val stature = user.height
-        val bundle = Bundle()
-        bundle.putString("id", id)
-        bundle.putString("name", name)
-        //bundle.putDouble("stature", stature.toDouble())
-
-        //val intent = Intent(this, TestActivity::class.java)
         val intent = Intent(this, SecondaryActivity::class.java)
         intent.putExtra("user", user)
-        intent.putExtras(bundle)
         startActivity(intent)
 
+        //Toast.makeText(this, user.name, Toast.LENGTH_SHORT).show()
+
+        //val id = user.id
+        //val name = user.name
+        ////val stature = user.height
+        //val bundle = Bundle()
+        //bundle.putString("id", id)
+        //bundle.putString("name", name)
+        ////bundle.putDouble("stature", stature.toDouble())
+
+        //val intent = Intent(this, TestActivity::class.java)
+        //intent.putExtras(bundle)
 
         //val intentStature = Intent(this, UserStature::class.java)
         //intentStature.putExtras(bundle)
